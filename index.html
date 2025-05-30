@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiple Choice Quiz</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2em; }
+    .question { margin-bottom: 1em; }
+    .result { font-weight: bold; margin-top: 2em; }
+  </style>
+</head>
+<body>
+
+  <h2>Quiz: Basic Knowledge</h2>
+
+  <form id="quizForm">
+    <div class="question">
+      <p>1. What is the capital of France?</p>
+      <label><input type="radio" name="q1" value="A"> A) Berlin</label><br>
+      <label><input type="radio" name="q1" value="B"> B) Madrid</label><br>
+      <label><input type="radio" name="q1" value="C"> C) Paris</label><br>
+      <label><input type="radio" name="q1" value="D"> D) Rome</label>
+    </div>
+
+    <div class="question">
+      <p>2. Which planet is known as the Red Planet?</p>
+      <label><input type="radio" name="q2" value="A"> A) Venus</label><br>
+      <label><input type="radio" name="q2" value="B"> B) Mars</label><br>
+      <label><input type="radio" name="q2" value="C"> C) Jupiter</label><br>
+      <label><input type="radio" name="q2" value="D"> D) Mercury</label>
+    </div>
+
+    <div class="question">
+      <p>3. Who wrote "Romeo and Juliet"?</p>
+      <label><input type="radio" name="q3" value="A"> A) Mark Twain</label><br>
+      <label><input type="radio" name="q3" value="B"> B) Charles Dickens</label><br>
+      <label><input type="radio" name="q3" value="C"> C) William Shakespeare</label><br>
+      <label><input type="radio" name="q3" value="D"> D) Jane Austen</label>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div class="result" id="result"></div>
+
+  <script>
+    const correctAnswers = {
+      q1: 'C',
+      q2: 'B',
+      q3: 'C'
+    };
+
+    document.getElementById('quizForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let q in correctAnswers) {
+        const answer = document.querySelector(`input[name="${q}"]:checked`);
+        if (answer && answer.value === correctAnswers[q]) {
+          score++;
+        }
+      }
+
+      const resultDiv = document.getElementById('result');
+      resultDiv.textContent = `You scored ${score} out of ${total}`;
+    });
+  </script>
+
+</body>
+</html>
