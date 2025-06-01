@@ -904,7 +904,7 @@
         </div>
       </div>
 
-    <button type="submit">Submit</button>
+    <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 
   <div class="result" id="result"></div>
@@ -970,11 +970,11 @@
       // Display results
       const resultDiv = document.getElementById('result');
       resultDiv.innerHTML = `
-       <h2 class="fw-bold">Focus Areas:</h2>
-       <p class="fw-bold">I - Alignment: ${ones}</p>
-       <p class="fw-bold">II - Revitalization: ${twos}</p>
-       <p class="fw-bold">III - Church Planting/Replanting: ${threes}</p>
-       <p class="fw-bold">IV - Finishing Well: ${fours}</p> 
+       <h3 class="fw-bold"><br><br>Focus Areas:</h3>
+       <h4 class="fw-bold">I - Alignment: ${ones}</h4>
+       <h4 class="fw-bold">II - Revitalization: ${twos}</h4>
+       <h4 class="fw-bold">III - Church Planting/Replanting: ${threes}</h4>
+       <h4 class="fw-bold">IV - Finishing Well: ${fours}</h4> 
         ${unanswered.length > 0 ? `
           <div class="unanswered">
             <p>Unanswered Questions: ${unanswered.join(', ')}</p>
