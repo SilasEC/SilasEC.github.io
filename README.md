@@ -1,6 +1,6 @@
 # Appraisal Questions for LCMS Congregations
 
-This is an electronic version of the *"Appraisal Questions for Congregations"* distributed by the LCMS Office of National Mission. The mapping from questions to "focus areas" is done automatically.
+This is an electronic version of the *"Appraisal Questions for Congregations"* distributed by the LCMS Office of National Mission. The mapping from answers to "focus areas" is done automatically.
 
 To use this program, access [silasec.github.io](https://silasec.github.io) via a web browser, fill the form as directed, and press **Submit** at the bottom of the page. After submission, the tallies for the four focus areas will be printed, along with the IDs of any unanswered questions.
 
