@@ -15,7 +15,7 @@
     <h1 class="mb-4 fw-bolder">Appraisal Questions For Congregations</h1>
 
     <form id="quizForm">
-        <h2 class="mb-4">Part 1: Community</h2>
+        <h2 class="mb-4 fw-bold">Part 1: Community</h2>
       <div class="card mb-3">
         <div class="card-body">
           <p class="card-title fw-bold">1-1. Which statement best describes the growth or decline of our community?</p>
@@ -220,7 +220,7 @@
         </div>
       </div>
 
-     <h2 class="mb-4">Part 2: Pastoral Care and Finances</h2>
+     <h2 class="mb-4 fw-bold">Part 2: Pastoral Care and Finances</h2>
       <div class="card mb-3">
         <div class="card-body">
           <p class="card-title fw-bold">2-1. Which statement best describes how our congregation is receiving pastoral care?</p>
@@ -643,7 +643,7 @@
         </div>
       </div>
 
-      <h2 class="mb-4">Part 3: Congregational Life</h2>
+      <h2 class="mb-4 fw-bold">Part 3: Congregational Life</h2>
       <div class="card mb-3">
         <div class="card-body">
           <p class="card-title fw-bold">3-1. How does our total worship attendance compare to what it was 5 years ago?</p>
@@ -971,10 +971,10 @@
       const resultDiv = document.getElementById('result');
       resultDiv.innerHTML = `
        <h3 class="fw-bold"><br>Focus Areas:</h3>
-       <h6 class="fw-bold">I - Alignment: ${ones}</h6>
-       <h6 class="fw-bold">II - Revitalization: ${twos}</h6>
-       <h6 class="fw-bold">III - Church Planting/Replanting: ${threes}</h6>
-       <h6 class="fw-bold">IV - Finishing Well: ${fours}</h6> 
+       <h5 class="fw-bold">I - Alignment: ${ones}</h5>
+       <h5 class="fw-bold">II - Revitalization: ${twos}</h5>
+       <h5 class="fw-bold">III - Church Planting/Replanting: ${threes}</h5>
+       <h5 class="fw-bold">IV - Finishing Well: ${fours}</h5> 
         ${unanswered.length > 0 ? `
           <div class="unanswered">
             <p>Unanswered Questions: ${unanswered.join(', ')}</p>
