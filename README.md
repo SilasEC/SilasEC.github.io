@@ -1,1 +1,3 @@
 # SilasEC.github.io
+This is an electronic version of the "Appraisal Questions for Congregations" distributed by the LCMS Office of National Mission. The mapping from questions to "focus areas" is done automatically. To use this program, simply fill the form as directed and press submit at the bottom of the page. After submission, the tallies for the four focus areas will be printed, along with the IDs of any unanswered questions. 
+Note that the auto-mapping accounts for the answering directions in the quiz. For example, if question 2-1 is not answered with "a.", no answer given for question 2-2 will affect the focus area tallies.
