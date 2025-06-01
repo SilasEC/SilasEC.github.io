@@ -12,7 +12,7 @@
 </head>
 <body class="bg-light">
   <div class="container py-5">
-    <h1 class="mb-4">Appraisal Questions For Congregations</h1>
+    <h1 class="mb-4 fw-bolder">Appraisal Questions For Congregations</h1>
 
     <form id="quizForm">
         <h2 class="mb-4">Part 1: Community</h2>
@@ -970,11 +970,11 @@
       // Display results
       const resultDiv = document.getElementById('result');
       resultDiv.innerHTML = `
-       <h3 class="fw-bold"><br><br>Focus Areas:</h3>
-       <h4 class="fw-bold">I - Alignment: ${ones}</h4>
-       <h4 class="fw-bold">II - Revitalization: ${twos}</h4>
-       <h4 class="fw-bold">III - Church Planting/Replanting: ${threes}</h4>
-       <h4 class="fw-bold">IV - Finishing Well: ${fours}</h4> 
+       <h3 class="fw-bold"><br>Focus Areas:</h3>
+       <h6 class="fw-bold">I - Alignment: ${ones}</h6>
+       <h6 class="fw-bold">II - Revitalization: ${twos}</h6>
+       <h6 class="fw-bold">III - Church Planting/Replanting: ${threes}</h6>
+       <h6 class="fw-bold">IV - Finishing Well: ${fours}</h6> 
         ${unanswered.length > 0 ? `
           <div class="unanswered">
             <p>Unanswered Questions: ${unanswered.join(', ')}</p>
